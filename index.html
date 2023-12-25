@@ -1,0 +1,245 @@
+<head>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Dom forms</title>
+
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      />
+
+      <link rel="stylesheet" href="style.css" />
+
+    </head>
+
+    <body>
+
+      <div class="container-sm">
+        <div class="divClass">
+          <h1 id="title">Dom Form</h1>
+          <p id="description">
+            Fill your contact details and your choice of food
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <form class="row justify-content-center" id="form">
+
+          <div class="col-md-4">
+            <label for="first-name" class="form-label" id="firstnamelabel"
+              >First Name
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="first-name"
+              placeholder="firstname"
+            />
+          </div>
+
+          <div class="col-md-4">
+            <label for="last-name" class="form-label" id="lastnamelabel"
+              >Last Name</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="last-name"
+              placeholder="last name"
+            />
+          </div>
+
+          <br />
+
+          <div class="col-md-8">
+            <label for="email" class="form-label" id="emaillabel">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Your email address"
+            />
+          </div>
+
+          <div class="col-md-8">
+            <label for="address" class="form-label" id="addresslabel"
+              >Address</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="address"
+              placeholder="your address"
+            />
+          </div>
+
+          <br />
+
+          <div class="col-md-10">
+            <label for="genderlabel" class="form-label" id="gender"
+              >Gender
+            </label>
+
+            <br />
+
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                id="male"
+                value="Male"
+              />
+              <label class="form-check-label" for="inlineRadio1">Male</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                id="female"
+                value="Female"
+              />
+              <label class="form-check-label" for="inlineRadio2">Female</label>
+            </div>
+          </div>
+
+          <br />
+          <br />
+
+          <div class="col-md-5">
+            <label for="country" class="form-label" id="countrylabel"
+              >Country</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="country"
+              placeholder="your country"
+            />
+          </div>
+
+          <div class="col-md-4">
+            <label for="state" class="form-label" id="statelabel">State</label>
+            <input
+              type="text"
+              class="form-control"
+              id="state"
+              placeholder="your state"
+            />
+          </div>
+
+          <div class="col-md-3">
+            <label for="pincode" class="form-label" id="pincodelabel"
+              >Pincode</label
+            >
+            <input type="text" class="form-control" id="pincode" />
+          </div>
+
+          <div class="col-md-12">
+
+            <h3 id="h3">Choose Atleast Two Of Your Favourite Foods</h3>
+
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="food"
+                id="food1"
+                value="Briyani"
+              />
+              <label class="form-check-label" for="food1">Briyani</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="food"
+                id="food2"
+                value="Burger"
+              />
+              <label class="form-check-label" for="food2">Burger</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="food"
+                id="food3"
+                value="Thai-Noodles"
+              />
+              <label class="form-check-label" for="food3">ThaiNoodles</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="food"
+                id="food4"
+                value="Hot-Dogs"
+              />
+              <label class="form-check-label" for="food4">HotDogs</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="food"
+                id="food5"
+                value="Pizza"
+              />
+              <label class="form-check-label" for="food5">Pizza</label>
+            </div>
+          </div>
+
+          <input
+            class="btn btn-primary"
+            type="submit"
+            value="Submit"
+            id="submit"
+          />
+        </form>
+
+      </div>
+
+      <div class="container-sm">
+        <div class="table-responsive-sm">
+
+          <table class="table" id="tabel">
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Address</th>
+                <th>Country</th>
+                <th>State</th>
+                <th>Pincode</th>
+                <th>Food</th>
+              </tr>
+            </thead>
+            <tbody id="formDataBody"></tbody>
+          </table>
+          
+        </div>
+      </div>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"
+      ></script>
+      <script src="./script.js"></script>
+    </body>
+  </html>
+</head>

@@ -1,0 +1,187 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 50px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.divClass {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 15px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  text-align: center;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #333333;
+}
+
+.form-control {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.form-check-input {
+  margin-right: 5px;
+}
+
+#submit {
+  margin-top: 20px;
+  background-color: #838d94;
+  color: #ffffff;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 12%;
+}
+
+#submit:hover {
+  background-color: #2182c4;
+}
+
+#tabel {
+  margin-top: 50px;
+}
+
+th {
+  background-color: #934656;
+  color: #ffffff;
+  text-align: center;
+}
+
+#gender {
+  margin-left: 88px;
+}
+
+#male {
+  margin-left: 88px;
+}
+
+#countrylabel {
+  margin-top: 10%;
+} 
+
+#statelabel {
+  margin-top: 13%;
+} 
+
+#pincodelabel {
+  margin-top: 18%;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid #ecf0f1;
+  max-height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+th {
+  background-color: #934656;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 576px) {
+
+  .container {
+    padding: 20px;
+  }
+
+  .form-control {
+    padding: 8px;
+  }
+
+  #submit {
+    padding: 12px 16px;
+  }
+
+  #gender {
+    margin-left: 0px;
+  }
+
+  #male {
+    margin-left: 14px;
+  }
+
+  .divClass {
+    padding: 10px;
+  }
+
+  th,
+  td {
+    white-space: normal;
+  }
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+  .container {
+    padding: 25px;
+  }
+
+  .form-control {
+    padding: 10px;
+  }
+
+  #submit {
+    padding: 14px 18px;
+  }
+
+  #gender {
+    margin-left: 0 !important;
+  }
+
+  #male {
+    margin-left: 25%;
+  }
+
+  .divClass {
+    padding: 12px;
+  }
+
+  th,
+  td {
+    white-space: normal;
+  }
+
+}
+
+@media (min-width: 769px) {
+
+  .container {
+    padding: 30px;
+  }
+
+  .form-control {
+    padding: 12px;
+  }
+
+  #submit {
+    padding: 16px 20px;
+  }
+  
+}
