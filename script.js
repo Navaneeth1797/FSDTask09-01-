@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-
   let form = document.getElementById("form");
   let formDataBody = document.getElementById("formDataBody");
 
@@ -9,9 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     clearErrorMessages();
 
     if (!validateForm()) {
-
       return;
-
     }
 
     let firstName = document.getElementById("first-name").value;
@@ -25,10 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let foodOptions = document.querySelectorAll('input[name="food"]:checked');
 
     if (foodOptions.length < 2) {
-
       alert("Please choose at least two food options.");
       return;
-
     }
 
     let newRow = document.createElement("tr");
@@ -50,46 +45,34 @@ document.addEventListener("DOMContentLoaded", function () {
     formDataBody.appendChild(newRow);
 
     form.reset();
-
   });
 
   function validateForm() {
-
     let isValid = true;
 
     let inputs = form.querySelectorAll("input, select");
     inputs.forEach((input) => {
-
       if (!input.value.trim()) {
         displayErrorMessage(input, "Please do not leave this field blank.");
         isValid = false;
-
       }
-
     });
 
     return isValid;
-
   }
 
   function displayErrorMessage(input, message) {
-
     let errorDiv = document.createElement("div");
     errorDiv.className = "alert alert-danger";
     errorDiv.textContent = message;
 
     input.parentNode.insertBefore(errorDiv, input.nextSibling);
-
   }
 
   function clearErrorMessages() {
-
     let errorMessages = form.querySelectorAll(".alert-danger");
     errorMessages.forEach((errorMessage) => {
       errorMessage.remove();
-
     });
-
   }
-  
 });

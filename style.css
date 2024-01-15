@@ -74,11 +74,11 @@ th {
 
 #countrylabel {
   margin-top: 10%;
-} 
+}
 
 #statelabel {
   margin-top: 13%;
-} 
+}
 
 #pincodelabel {
   margin-top: 18%;
@@ -105,7 +105,6 @@ th {
 }
 
 @media (max-width: 576px) {
-
   .container {
     padding: 20px;
   }
@@ -130,15 +129,31 @@ th {
     padding: 10px;
   }
 
-  th,
+  /* th,
   td {
     white-space: normal;
+  } */
+  table {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+    border-radius: 5px;
+  }
+  th,
+  td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
   }
 
+  th {
+    font-weight: bold;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
-
   .container {
     padding: 25px;
   }
@@ -163,15 +178,31 @@ th {
     padding: 12px;
   }
 
-  th,
+  /* th,
   td {
     white-space: normal;
+  } */
+  table {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+    border-radius: 5px;
+  }
+  th,
+  td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
   }
 
+  th {
+    font-weight: bold;
+  }
 }
 
 @media (min-width: 769px) {
-
   .container {
     padding: 30px;
   }
@@ -183,5 +214,35 @@ th {
   #submit {
     padding: 16px 20px;
   }
+  /* th,
+     td {
+       display: block;
+       width: 100%;
+       box-sizing: border-box;
+     }
   
+     th {
+       font-weight: bold;
+     } */
+}
+@media (min-width: 769px) and (max-width: 1030px) {
+  table {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  th,
+  td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  th {
+    font-weight: bold;
+  }
 }
